@@ -10,7 +10,7 @@ import ContactList from './ContactList';
 import ContactDetail from './ContactDetail';
 
 function App() {
-  const LOCAL_STORAGE_KEY = 'contacts'
+  // const LOCAL_STORAGE_KEY = 'contacts'
   const [contacts, setContacts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -21,8 +21,8 @@ function App() {
     return response.data;
   }
 
-  const searchHandler = (searchTerm) => {
-    setSearchTerm(searchTerm);
+  const searchHandler = (term) => {
+    setSearchTerm(term);
     if (searchTerm !== '') {
       const newContactList = contacts.filter(contact => {
         return Object.values(contact).join(" ").toLowerCase().includes(searchTerm.toLowerCase());
@@ -77,9 +77,9 @@ function App() {
     getAllContacts()
   }, [])
 
-  useEffect(() => {
+  // useEffect(() => {
     // localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts))
-  }, [contacts])
+  // }, [contacts])
 
   return (
     <div className="App">

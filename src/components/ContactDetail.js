@@ -12,10 +12,10 @@ const ContactDetail = (props) => {
         </div>
         <div className="content">
           <small className='gray'>{id}</small>
-          <div className="header">{name}</div>
-          <div className="description">{email}</div>
+          <h3 className="header">{name}</h3>
+          <p className="description">{email}</p>
         </div>
-        <div className="center-div">
+        <div className="center">
           <Link to='/'>
             <button className="ui button pink center">
               Back to Contact List
