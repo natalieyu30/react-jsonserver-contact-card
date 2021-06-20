@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "id": "4ab84500-b708-4350-a144-d9789487a9b2",
+      "name": "natdev",
+      "email": "natdev@email.com"
+    },
+    {
+      "id": "1a8f78b4-09fa-4b50-b6b7-307b376387be",
+      "name": "hello",
+      "email": "hello hello@gmail.com"
+    },
+    {
+      "id": "f24167a8-b5fa-4854-81ce-440da69211e9",
+      "name": "spyky",
+      "email": "spyky@email.com"
+    }
+  ]
+}
